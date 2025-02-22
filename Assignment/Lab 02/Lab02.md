@@ -41,11 +41,11 @@ Given two sorted arrays of integers, the goal is to design an algorithm that mer
 
 ### **Example**
 #### **Input:**
-Array 1: **[1, 4, 5, 8, 17]**  
-Array 2: **[2, 4, 8, 11, 13, 21, 23, 25]**  
+Array 1: $$[1, 4, 5, 8, 17]$$  
+Array 2: $$[2, 4, 8, 11, 13, 21, 23, 25]$$
 
 #### **Output:**
-Merged Sorted Array: **[1, 2, 4, 4, 5, 8, 8, 11, 13, 17, 21, 23, 25]**
+Merged Sorted Array: $$[1, 2, 4, 4, 5, 8, 8, 11, 13, 17, 21, 23, 25]$$
 
 ---
 
