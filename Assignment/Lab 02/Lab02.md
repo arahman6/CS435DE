@@ -101,3 +101,96 @@ int[] merge(int[] arr1, int[] arr2) {
 ## **Final Answer**
 - **Algorithm:** Two-pointer approach.
 - **Time Complexity:** $$O(n + m)$$
+
+
+
+
+# Lab 2: Big-O and Little-o Analysis
+
+## Problem Statement
+Use the definitions of **Big-O** $$O(f(n))$$ and **Little-o** $$o(f(n))$$ to determine whether each of the following statements is true or false, and provide a proof.
+
+---
+
+### **A. \( 1 + 4n^2 \) is \( O(n^2) \)**  
+**True** ✅  
+By definition, a function \( f(n) \) is in **\( O(g(n)) \)** if there exist positive constants \( c \) and \( n_0 \) such that:
+
+$$\[f(n) \leq c \cdot g(n) \quad \text{for all } n \geq n_0\]$$
+
+Here, \( f(n) = 1 + 4n^2 \) and \( g(n) = n^2 \).  
+For large \( n \), the \( 4n^2 \) term dominates, and we can choose \( c = 5 \) and \( n_0 = 1 \), such that:
+
+\[
+1 + 4n^2 \leq 5n^2
+\]
+
+Thus, **\( 1 + 4n^2 \) is \( O(n^2) \)**.
+
+---
+
+### **B. \( n^2 - 2n \) is _not_ \( O(n) \)**  
+**True** ✅  
+For \( O(n) \), we would need:
+
+\[
+n^2 - 2n \leq c \cdot n
+\]
+
+for some constant \( c \) and sufficiently large \( n \).  
+Dividing both sides by \( n \):
+
+\[
+n - 2 \leq c
+\]
+
+This is **false** for arbitrarily large \( n \) since the left-hand side grows indefinitely, while \( c \) is a constant.  
+Thus, **\( n^2 - 2n \) is _not_ \( O(n) \)**.
+
+---
+
+### **C. \( \log(n) \) is \( o(n) \)**  
+**True** ✅  
+Little-o \( o(f(n)) \) means:
+
+\[
+\lim_{n \to \infty} \frac{\log(n)}{n} = 0
+\]
+
+Since:
+
+\[
+\frac{\log(n)}{n} \to 0 \quad \text{as } n \to \infty
+\]
+
+this satisfies the condition for \( o(n) \).  
+Thus, **\( \log(n) \) is \( o(n) \)**.
+
+---
+
+### **D. \( n \) is _not_ \( o(n) \)**  
+**True** ✅  
+For \( n \) to be in \( o(n) \), we require:
+
+\[
+\lim_{n \to \infty} \frac{n}{n} = 0
+\]
+
+However:
+
+\[
+\frac{n}{n} = 1
+\]
+
+which does **not** tend to zero.  
+Thus, **\( n \) is _not_ \( o(n) \)**.
+
+---
+
+## **Final Answers**
+| Statement | True/False |
+|-----------|-----------|
+| \( 1 + 4n^2 \) is \( O(n^2) \) | ✅ True |
+| \( n^2 - 2n \) is _not_ \( O(n) \) | ✅ True |
+| \( \log(n) \) is \( o(n) \) | ✅ True |
+| \( n \) is _not_ \( o(n) \) | ✅ True |
