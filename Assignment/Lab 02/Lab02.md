@@ -2,7 +2,7 @@
 
 ## Problem Statement
 Determine the **asymptotic running time** of the following procedure:
-
+```java
 int[] arrays(int n) {  
     int[] arr = new int[n];  
 
@@ -18,7 +18,7 @@ int[] arrays(int n) {
 
     return arr;  
 }  
-
+```
 ## **Analysis**
 1. The first loop runs $$O(n)$$ times.  
 2. The nested loop executes $$O(n^2)$$ operations:  
