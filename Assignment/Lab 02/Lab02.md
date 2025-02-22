@@ -2,6 +2,7 @@
 
 ## Problem Statement
 Determine the **asymptotic running time** of the following procedure:
+
 ```java
 int[] arrays(int n) {  
     int[] arr = new int[n];  
@@ -20,7 +21,7 @@ int[] arrays(int n) {
 }  
 ```
 
-## **Analysis**
+## Analysis
 1. The first loop runs $$O(n)$$ times.  
 2. The nested loop executes $$O(n^2)$$ operations:  
    - The outer loop runs $$n$$ times.  
@@ -28,7 +29,7 @@ int[] arrays(int n) {
    - The total number of operations is:  
      $$\sum_{i=0}^{n-1} (n - i) = \frac{n(n+1)}{2} = O(n^2)$$  
 
-## **Final Answer**
+## Final Answer
 The overall complexity is $$O(n^2)$$.  
 
 
@@ -40,6 +41,7 @@ The overall complexity is $$O(n^2)$$.
 Given two sorted arrays of integers, the goal is to design an algorithm that merges them into a single sorted array containing all elements from both input arrays.
 
 ### **Example**
+
 #### **Input:**
 Array 1: $$\[1, 4, 5, 8, 17\]$$  
 Array 2: $$\[2, 4, 8, 11, 13, 21, 23, 25\]$$
@@ -211,6 +213,7 @@ A list $$P$$ consisting of all subsets of $$X$$, where elements of $$P$$ are set
 ---
 
 ## **Java Implementation**
+
 ```java
 import java.util.*;  
 
