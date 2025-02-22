@@ -3,7 +3,7 @@
 ## Analysis
 We analyze whether the given functions are increasing or eventually nondecreasing.
 
-1. **Function:** $ f(x) = -x^2 $
+1. **Function:** `$ f(x) = -x^2 $`
    - **Derivative:** $ f'(x) = -2x $
    - Since $ f'(x) $ is negative for $ x > 0 $ and positive for $ x < 0 $, the function is **not increasing**. It is a downward-facing parabola, meaning it is **not eventually nondecreasing** either.
 
