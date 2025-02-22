@@ -158,7 +158,7 @@ Thus, **$$\log(n)$$ is $$o(n)$$**.
 
 ---
 
-### **D. $$ n $$ is _not_ $$ o(n) $$**  
+### **D. $$n$$ is _not_ $$o(n)$$**  
 **True** 
 For $$n$$ to be in $$o(n)$$, we require:
 
