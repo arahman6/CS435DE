@@ -187,20 +187,20 @@ Yes, it is necessarily true that the set $T - \{s_{n-1}\}$ is a solution to the 
 - $s_{n-1}$ belongs to $T$.
 
 This means:
-$$
-\sum_{t \in T} t = k
-$$
-Since $s_{n-1} \in T$, we can write:
-$$
-\sum_{t \in T - \{s_{n-1}\}} t + s_{n-1} = k
-$$
-Let $T' = T - \{s_{n-1}\}$. Then:
-$$
-\sum_{t \in T'} t = k - s_{n-1}
-$$
-Let $k' = k - s_{n-1}$ and $S' = \{s_0, s_1, \ldots, s_{n-2}\}$.
 
-Since $T' \subseteq S'$ and the sum of the elements in $T'$ is $k'$, $T'$ is a solution to the SubsetSum problem with inputs $S'$ and $k'$.
+$$\sum_{t \in T} t = k$$
+
+Since $s_{n-1} \in T$, we can write:
+
+$$\sum_{t \in T - \{s_{n-1}\}} t + s_{n-1} = k$$
+
+Let $T' = T - \{s_{n-1}\}$. Then:
+
+$$\sum_{t \in T'} t = k - s_{n-1}$$
+
+Let $$k' = k - s_{n-1}$$ and $$S' = \{s_0, s_1, \ldots, s_{n-2}\}$$.
+
+Since $$T' \subseteq S'$$ and the sum of the elements in $$T'$$ is $$k'$$, $$T'$$ is a solution to the SubsetSum problem with inputs $$S'$$ and $$k'$$.
 
 ### Conclusion
-Therefore, if $s_{n-1}$ belongs to $T$, then $T - \{s_{n-1}\}$ is necessarily a solution to the SubsetSum problem with inputs $S'$ and $k'$.
+Therefore, if $$s_{n-1}$$ belongs to $$T$$, then $$T - \{s_{n-1}\}$$ is necessarily a solution to the SubsetSum problem with inputs $$S'$$ and $$k'$$.
