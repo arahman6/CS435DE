@@ -1,4 +1,4 @@
-# Lab 2: Asymptotic Analysis
+# Problem 01: Asymptotic Analysis
 
 ## Problem Statement
 Determine the **asymptotic running time** of the following procedure:
@@ -34,7 +34,7 @@ The overall complexity is $$O(n^2)$$.
 
 
 
-# Lab 2: Merging Two Sorted Arrays
+# Problem 02: Merging Two Sorted Arrays
 
 ## Problem Statement
 Given two sorted arrays of integers, the goal is to design an algorithm that merges them into a single sorted array containing all elements from both input arrays.
@@ -105,7 +105,7 @@ int[] merge(int[] arr1, int[] arr2) {
 
 
 
-# Lab 2: Big-O and Little-o Analysis
+# Problem 03: Big-O and Little-o Analysis
 
 ## Problem Statement
 Use the definitions of **Big-O** $$O(f(n))$$ and **Little-o** $$o(f(n))$$ to determine whether each of the following statements is true or false, and provide a proof.
@@ -184,7 +184,7 @@ Thus, **$$n$$ is _not_ $$o(n)$$**.
 
 
 
-# Lab 2: Power Set Algorithm
+# Problem 04: Power Set Algorithm
 
 ## **Problem Statement**
 Given a set $$X$$, the **power set** $$P(X)$$ is the set of all subsets of $$X$$. The goal is to compute the power set of a given set using a brute-force approach.
