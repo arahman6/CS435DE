@@ -133,8 +133,8 @@ For $$O(n)$$, we would need:
 
 $$n^2 - 2n \leq c \cdot n$$
 
-for some constant $$ c $$ and sufficiently large $$n$$.  
-Dividing both sides by $$ n $$:
+for some constant $$c$$ and sufficiently large $$n$$.  
+Dividing both sides by $$n$$:
 
 $$n - 2 \leq c$$
 
