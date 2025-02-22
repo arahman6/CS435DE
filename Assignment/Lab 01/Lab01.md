@@ -75,9 +75,7 @@ public class GCD {
 
 ## Problem Statement
 You are given a set $$S = \{s_0, s_1, \dots, s_{n-1}\}$$ of positive integers and a non-negative integer $$k$$. Your algorithm should determine whether there exists a subset $$T \subseteq S$$ such that:
-$$
-\sum_{t \in T} t = k
-$$
+$$\sum_{t \in T} t = k$$
 If such a subset exists, return `true`; otherwise, return `false`.
 
 ## Brute Force Solution
