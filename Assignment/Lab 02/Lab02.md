@@ -116,7 +116,7 @@ Use the definitions of **Big-O** $$O(f(n))$$ and **Little-o** $$o(f(n))$$ to det
 **True** ✅  
 By definition, a function \( f(n) \) is in **\( O(g(n)) \)** if there exist positive constants \( c \) and \( n_0 \) such that:
 
-$$\[f(n) \leq c \cdot g(n) \quad \text{for all } n \geq n_0\]$$
+$$f(n) \leq c \cdot g(n) \quad \text{for all } n \geq n_0$$
 
 Here, \( f(n) = 1 + 4n^2 \) and \( g(n) = n^2 \).  
 For large \( n \), the \( 4n^2 \) term dominates, and we can choose \( c = 5 \) and \( n_0 = 1 \), such that:
