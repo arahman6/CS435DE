@@ -65,7 +65,7 @@ public class GreedySubsetSum {
 # Problem 4
 
 **Problem Statement**  
-You are given a solution \( T \) to a SubsetSum problem with set \( S = \{s_0, s_1, \ldots, s_{n-1}\} \) and a non-negative integer \( k \).  
+You are given a solution \( T \) to a SubsetSum problem with set $$\( S = \{s_0, s_1, \ldots, s_{n-1}\} \)$$ and a non-negative integer $$\( k \)$$.  
 - \( T \subseteq S \) and the sum of elements in \( T \) equals \( k \).  
 - \( s_{n-1} \in T \).  
 
