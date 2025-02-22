@@ -20,7 +20,7 @@ int[] arrays(int n) {
 }  
 ```
 ## **Analysis**
-1. The first loop runs $$O(n)$$ times.  
+1. The first loop runs **$$O(n)$$** times.  
 2. The nested loop executes $$O(n^2)$$ operations:  
    - The outer loop runs $$n$$ times.  
    - The inner loop runs from `j = i` to `j = n-1`, executing `(n - i)` times.  
