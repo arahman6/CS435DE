@@ -1,3 +1,16 @@
+Display math:
+
+```math
+e^{i\tau} - 1 = 0
+```
+
+```katex
+a^2 + b^2 = c^2
+```
+
+and line math `$V + F = E + 2$` or $`\sin^2(\alpha) + \cos^2(\alpha) = 1`$.
+
+
 # Math Problem 1: Increasing and Nondecreasing Functions
 
 ## Analysis
