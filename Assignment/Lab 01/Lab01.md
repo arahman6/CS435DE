@@ -1,22 +1,9 @@
-Display math:
-
-```math
-e^{i\tau} - 1 = 0
-```
-
-```katex
-a^2 + b^2 = c^2
-```
-
-and line math `$V + F = E + 2$` or $`\sin^2(\alpha) + \cos^2(\alpha) = 1`$.
-
-
 # Math Problem 1: Increasing and Nondecreasing Functions
 
 ## Analysis
 We analyze whether the given functions are increasing or eventually nondecreasing.
 
-1. **Function:** `$f(x) = -x^2$`
+1. **Function:** $$f(x) = -x^2$$
    - **Derivative:** $ f'(x) = -2x $
    - Since $ f'(x) $ is negative for $ x > 0 $ and positive for $ x < 0 $, the function is **not increasing**. It is a downward-facing parabola, meaning it is **not eventually nondecreasing** either.
 
