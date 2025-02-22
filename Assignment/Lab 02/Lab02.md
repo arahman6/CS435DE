@@ -181,3 +181,73 @@ Thus, **$$n$$ is _not_ $$o(n)$$**.
 | $$\log(n)$$ is $$o(n)$$ | True |
 | $$n$$ is _not_ $$o(n)$$ | True |
 
+
+
+
+# Lab 2: Power Set Algorithm
+
+## **Problem Statement**
+Given a set $$X$$, the **power set** $$P(X)$$ is the set of all subsets of $$X$$. The goal is to compute the power set of a given set using a brute-force approach.
+
+---
+
+## **Algorithm: PowerSet(X)**
+### **Input:**  
+A list $$X$$ of elements.  
+
+### **Output:**  
+A list $$P$$ consisting of all subsets of $$X$$, where elements of $$P$$ are sets.  
+
+### **Steps:**
+1. Initialize an empty list $$P$$ to store subsets.
+2. Create an empty set $$S$$ and add it to $$P$$.
+3. While $$X$$ is not empty:
+   - Remove the first element $$f$$ from $$X$$.
+   - For each subset $$x$$ in $$P$$:
+     - Create a new subset $$T = x \cup \{f\}$$.
+     - Add $$T$$ to $$P$$.
+4. Return $$P$$.
+
+---
+
+## **Java Implementation**
+```java
+import java.util.*;  
+
+public class PowerSet {  
+
+    public static List<Set<Integer>> powerSet(List<Integer> X) {  
+        List<Set<Integer>> P = new ArrayList<>();  
+        P.add(new HashSet<>()); // Add empty set  
+
+        for (int f : X) {  
+            List<Set<Integer>> newSubsets = new ArrayList<>();  
+            for (Set<Integer> subset : P) {  
+                Set<Integer> T = new HashSet<>(subset);  
+                T.add(f);  
+                newSubsets.add(T);  
+            }  
+            P.addAll(newSubsets);  
+        }  
+        return P;  
+    }  
+
+    public static void main(String[] args) {  
+        List<Integer> X = Arrays.asList(1, 2, 3);  
+        List<Set<Integer>> powerSet = powerSet(X);  
+        System.out.println(powerSet);  
+    }  
+}  
+
+```
+
+## **Time Complexity Analysis**
+- The number of subsets of a set of size $$n$$ is $$2^n$$.
+- Each element in $$X$$ generates new subsets by iterating over $$P$$.
+- The overall time complexity is **$$O(2^n)$$**.
+
+---
+
+## **Final Answer**
+- **Algorithm:** Iterative subset generation.
+- **Time Complexity:** $$O(2^n)$$.
