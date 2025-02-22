@@ -116,6 +116,7 @@ Use the definitions of **Big-O** $$O(f(n))$$ and **Little-o** $$o(f(n))$$ to det
 
 ### **A. $$1 + 4n^2$$ is $$O(n^2)$$**  
 **True** 
+
 By definition, a function $$f(n)$$ is in **$$O(g(n))$$** if there exist positive constants $$c$$ and $$n_0$$ such that:
 
 $$f(n) \leq c \cdot g(n) \quad \text{for all } n \geq n_0$$
@@ -131,6 +132,7 @@ Thus, **$$1 + 4n^2$$ is $$O(n^2)$$**.
 
 ### **B. $$n^2 - 2n$$ is _not_ $$O(n)$$**  
 **True** 
+
 For $$O(n)$$, we would need:
 
 $$n^2 - 2n \leq c \cdot n$$
@@ -147,6 +149,7 @@ Thus, **$$n^2 - 2n$$ is _not_ $$O(n)$$**.
 
 ### **C. $$\log(n)$$ is $$o(n)$$**  
 **True** 
+
 Little-o $$o(f(n))$$ means:
 
 $$\lim_{n \to \infty} \frac{\log(n)}{n} = 0$$
@@ -162,6 +165,7 @@ Thus, **$$\log(n)$$ is $$o(n)$$**.
 
 ### **D. $$n$$ is _not_ $$o(n)$$**  
 **True** 
+
 For $$n$$ to be in $$o(n)$$, we require:
 
 $$\lim_{n \to \infty} \frac{n}{n} = 0$$
