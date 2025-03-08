@@ -212,4 +212,43 @@ By limiting the number of comparisons in each pass, we significantly reduce the 
 Thus, this optimized **Bubble Sort** runs in $$O(n)$$ in the best case while maintaining $$O(n^2)$$ **in the worst case**.
 
 
+## Problem 4: 
+
+#### **Algorithm: Dutch National Flag Algorithm (Three-Way Partitioning)**
+Since the array consists only of `{0, 1, 2}`, we can use a **three-way partitioning algorithm (Dutch National Flag Algorithm)** to sort the array **in $$O(n)$$ time** with $$O(1)$$ **extra space**.
+
+#### **Steps to Sort the Array in $$O(n)$$ Time:**
+1. **Initialize Three Pointers**:
+   - `low` points to the beginning of the array.
+   - `mid` traverses the array.
+   - `high` points to the end of the array.
+
+2. **Partitioning Logic**:
+   - If `A[mid] == 0`: Swap `A[mid]` with `A[low]`, increment `low` and `mid`.
+   - If `A[mid] == 1`: `mid++` (1s are already in correct position).
+   - If `A[mid] == 2`: Swap `A[mid]` with `A[high]`, decrement `high` (move 2 to the right).
+
+3. **Continue Until `mid > high`**.
+
+### **Why This Algorithm Runs in $$O(n)$$?**
+- Each element is processed at most **once**.
+- Swaps and comparisons are **constant-time operations**.
+- There is **no nested loop**, ensuring **linear $$O(n)$$ complexity**.
+- Only **three pointers** (`low`, `mid`, `high`) are used, satisfying the **$$O(1)$$ space** requirement.
+
+### **Example Execution**
+#### **Input:**
+```
+A = [2, 0, 2, 1, 1, 0]
+```
+#### **Sorting Steps:**
+1. Swap `A[0]` (2) with `A[5]` -> `[0, 0, 2, 1, 1, 2]`
+2. Swap `A[2]` (2) with `A[4]` -> `[0, 0, 1, 1, 2, 2]`
+3. Since 1s are already sorted, stop.
+
+#### **Output:**
+```
+A = [0, 0, 1, 1, 2, 2]
+```
+
 
