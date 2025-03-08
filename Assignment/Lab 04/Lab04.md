@@ -212,9 +212,7 @@ By limiting the number of comparisons in each pass, we significantly reduce the 
 Thus, this optimized **Bubble Sort** runs in $$O(n)$$ in the best case while maintaining $$O(n^2)$$ **in the worst case**.
 
 
-## Problem 4: 
-
-#### **Algorithm: Dutch National Flag Algorithm (Three-Way Partitioning)**
+## Problem 4: Algorithm: Dutch National Flag Algorithm (Three-Way Partitioning)
 Since the array consists only of `{0, 1, 2}`, we can use a **three-way partitioning algorithm (Dutch National Flag Algorithm)** to sort the array **in $$O(n)$$ time** with $$O(1)$$ **extra space**.
 
 #### **Steps to Sort the Array in $$O(n)$$ Time:**
