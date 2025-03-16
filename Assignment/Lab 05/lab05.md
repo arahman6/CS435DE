@@ -322,13 +322,13 @@ A binary tree of height 3 means the longest path from the root to a leaf contain
 - Number of nodes: **15**  
 
 ```markdown
-        1
-       / \
-      2   3
-     / \ / \
-    4  5 6  7
-   / \/ \/ \ 
-  8  9 10 11 12 13 14 15
+          1
+       /     \
+      2       3
+    /   \    /   \
+    4    5   6     7
+  / \   / \ / \   / \ 
+  8 9 10 11 12 13 14 15
 ```
 
 
