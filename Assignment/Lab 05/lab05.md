@@ -382,12 +382,12 @@ Each of these trees satisfies the height condition while having a unique number 
 
 #### **(b) Verifying the Statement**
 
-**Statement:** *Every binary tree of height 3 has at most $$2^3 = 8$$ leaves.*
+**Statement:** *Every binary tree of height 3 has at most $2^3$ = $8$ leaves.*
 
 - A **full binary tree** (where every node has 0 or 2 children) has the maximum number of leaves at height 3, which is:
-  \[
-  2^3 = 8
-  \]
+
+$$2^3 = 8$$
+
 - If a tree is **not full**, the number of leaves is **less than 8**.
 - From the examples drawn, it is confirmed that no binary tree of height 3 can have more than 8 leaves.
 
@@ -396,17 +396,19 @@ The statement is **true** because in the worst-case scenario, the maximum number
 
 ---
 
-#### **(c) Generalization for Any Height $$n$$**
+#### **(c) Generalization for Any Height $n$**
 
-For a binary tree of height $$n$$:
+For a binary tree of height $n$:
 
 - The **maximum number of leaves** in a full binary tree follows the formula:
-  $$
-  2^n
- $$
-- This occurs when all levels are completely filled.
-- If the tree is not full, the number of leaves is **less than** $$ 2^n $$.
 
-Thus, the maximum number of leaves in a binary tree of height $$n$$ is $$2^n$$.
+$$
+2^n
+$$
+
+- This occurs when all levels are completely filled.
+- If the tree is not full, the number of leaves is **less than** $2^n$.
+
+Thus, the maximum number of leaves in a binary tree of height $n$ is $2^n$.
 
 
