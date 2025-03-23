@@ -134,3 +134,29 @@ $$
 Because all $log(n)$ functions are bounded by $O(n)$.
 
 
+
+## Problem 4. Pivot-Selection Strategy for QuickSort with Worst-Case $O(n \log{n})$
+
+To guarantee that QuickSort has a worst-case running time of $O(n \log{n})$, we need to select a pivot that ensures balanced partitioning every time. The best strategy for this is the **Median-of-Medians Algorithm**.
+
+### ✨ **Median-of-Medians Pivot Selection**
+- **Step 1:** Divide the array into groups of 5 elements (the number 5 is chosen to balance complexity and efficiency).
+- **Step 2:** Find the median of each group. This takes $O(n)$ time because there are **$n/5$ groups** and finding the median of each group is constant time.
+- **Step 3:** Collect all these medians and recursively find the **median of the medians**.
+- **Step 4:** Use this **median-of-medians** as the pivot.
+
+### Why does it guarantee $O(n \log{n})$?
+- This pivot selection ensures that the pivot is "good" — meaning that it divides the array into reasonably balanced partitions.
+- It prevents worst-case behavior (like always picking the smallest or largest element).
+- Each recursive call reduces the problem size by a constant fraction.
+- The total running time of QuickSort with this pivot selection is bounded by:
+
+$$
+T(n) = T\left(\dfrac{n}{5}\right) + T\left(\dfrac{7n}{10}\right) + O(n)
+$$
+
+which solves to $O(n \log n)$.
+
+### ✅ **Final Conclusion:**
+Using the **Median-of-Medians** as the pivot selection strategy ensures that QuickSort runs in $O(n \log{n})$ even in the worst case.
+
