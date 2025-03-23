@@ -18,8 +18,6 @@ Final sorted Array [1,2,3,4,5,6]
 
 ## Problem 2: 
 
-### **Problem 2 Solution**
-
 #### **Part (a): Identifying Good Pivots**  
 For the array $\( A = [5, 1, 4, 3, 6, 2, 7, 1, 3] \) (\( n = 9 \))$:  
 - A **good pivot** $\( x \)$ satisfies:  
@@ -56,9 +54,7 @@ For the array $\( A = [5, 1, 4, 3, 6, 2, 7, 1, 3] \) (\( n = 9 \))$:
 
 
 
-### Problem 3:
-
-#### Algorithm: findElementEqualToItsIndex(A, start, end)
+### Problem 3: findElementEqualToItsIndex(A, start, end)
 
 **Input:** Sorted array $\( A \)$, starting position `start`, ending position `end`
 
@@ -139,7 +135,7 @@ Because all $log(n)$ functions are bounded by $O(n)$.
 
 To guarantee that QuickSort has a worst-case running time of $O(n \log{n})$, we need to select a pivot that ensures balanced partitioning every time. The best strategy for this is the **Median-of-Medians Algorithm**.
 
-### ✨ **Median-of-Medians Pivot Selection**
+### Median-of-Medians Pivot Selection
 - **Step 1:** Divide the array into groups of 5 elements (the number 5 is chosen to balance complexity and efficiency).
 - **Step 2:** Find the median of each group. This takes $O(n)$ time because there are **$n/5$ groups** and finding the median of each group is constant time.
 - **Step 3:** Collect all these medians and recursively find the **median of the medians**.
@@ -157,6 +153,55 @@ $$
 
 which solves to $O(n \log n)$.
 
-### ✅ **Final Conclusion:**
+### Final Conclusion:
 Using the **Median-of-Medians** as the pivot selection strategy ensures that QuickSort runs in $O(n \log{n})$ even in the worst case.
 
+
+## Problem 5: Quick Select Median Finding Steps
+
+**Array:** [1, 12, 8, 7, -2, -3, 6]
+**n = 7 (odd), so the median is the element at position ⌊n/2⌋ = 3 (0-based index 3, 4th element in sorted array)**
+**Target median is 6 (given)**
+
+#### Step 1:
+- **Pivot:** 1 (leftmost)
+- Partition around 1:
+  - Less than pivot: [-2, -3]
+  - Equal to pivot: [1]
+  - Greater than pivot: [12, 8, 7, 6]
+- **Size of left + equal:** 3 (matches position index 2)
+
+#### Step 2:
+- **Median is in the right partition** → [12, 8, 7, 6]
+
+#### Step 3:
+- **Pivot:** 12 (leftmost of the new array)
+- Partition around 12:
+  - Less than pivot: [8, 7, 6]
+  - Equal to pivot: [12]
+  - Greater than pivot: []
+- Since our target index is less than the index of 12, we move to **left partition** [8, 7, 6]
+
+#### Step 4:
+- **Pivot:** 8
+- Partition around 8:
+  - Less than pivot: [7, 6]
+  - Equal to pivot: [8]
+  - Greater than pivot: []
+- Still need the 3rd element → go left again to [7, 6]
+
+#### Step 5:
+- **Pivot:** 7
+- Partition around 7:
+  - Less than pivot: [6]
+  - Equal to pivot: [7]
+  - Greater than pivot: []
+- **Since k is 0 (0-based target in the subarray), the answer is the max of left partition or the pivot**
+
+#### Step 6:
+- Reached the base → The median is **6**
+
+---
+
+### Final Answer:
+The median of the array `[1, 12, 8, 7, -2, -3, 6]` is **6**, found through QuickSelect.
