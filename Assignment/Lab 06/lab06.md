@@ -15,6 +15,7 @@
 ```
 Final sorted Array [1,2,3,4,5,6]
 
+---
 
 ## Problem 2: 
 
@@ -52,6 +53,7 @@ For the array $\( A = [5, 1, 4, 3, 6, 2, 7, 1, 3] \) (\( n = 9 \))$:
 -   This matches the original answer.
 
 
+---
 
 ### Problem 3: findElementEqualToItsIndex(A, start, end)
 
@@ -127,7 +129,7 @@ $$
 
 Because all $log(n)$ functions are bounded by $O(n)$.
 
-
+---
 
 ## Problem 4. Pivot-Selection Strategy for QuickSort with Worst-Case $O(n \log{n})$
 
@@ -153,6 +155,8 @@ which solves to $O(n \log n)$.
 
 ### Final Conclusion:
 Using the **Median-of-Medians** as the pivot selection strategy ensures that QuickSort runs in $O(n \log{n})$ even in the worst case.
+
+---
 
 
 ## Problem 5: Quick Select Median Finding Steps
