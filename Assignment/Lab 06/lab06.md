@@ -40,7 +40,6 @@ For the array $\( A = [5, 1, 4, 3, 6, 2, 7, 1, 3] \) (\( n = 9 \))$:
 
 **Good Pivots**: $\(\boxed{[5, 4, 3, 2, 3]}\)$.  
 
----
 
 #### **Part (b): At Least Half Are Good Pivots?**  
 - Total elements: $\( n = 9 \)$.  
@@ -76,7 +75,6 @@ if A[mid] > mid and start != end:
 return false
 ```
 
----
 
 #### Count of Operations:
 | Operation                                   | Count           |
@@ -90,7 +88,7 @@ return false
 | Recursive call on left                      | 2 + T(n/2)      |
 | Return false                                | 1               |
 
----
+
 
 #### Recurrence Relation:
 $$
@@ -101,7 +99,7 @@ T\left(\dfrac{n}{2}\right) + 10 & \text{otherwise}
 \end{cases}
 $$
 
----
+
 
 #### Master Theorem Parameters:
 $$
@@ -201,7 +199,7 @@ Using the **Median-of-Medians** as the pivot selection strategy ensures that Qui
 #### Step 6:
 - Reached the base → The median is **6**
 
----
+
 
 ### Final Answer:
 The median of the array `[1, 12, 8, 7, -2, -3, 6]` is **6**, found through QuickSelect.
