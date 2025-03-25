@@ -7,20 +7,19 @@ Show that any comparison-based algorithm to sort 4 elements requires at least 5 
 
 For comparison-based sorting algorithms, the lower bound of the number of comparisons is determined by the decision tree model. 
 
-- The total number of possible permutations of 4 distinct elements is `4! = 24`.
+- The total number of possible permutations of 4 distinct elements is $4! = 24$.
 - Each leaf node in the decision tree represents one of these permutations.
-- A binary decision tree with depth `d` has at most `2^d` leaves.
+- A binary decision tree with depth $d$ has at most $2^d$ leaves.
 - Therefore, we must have:  
-  `2^d ≥ 24`
+  $2^d ≥ 24$
 
-Now, solve for `d`:  
-- `2^4 = 16 < 24`
-- `2^5 = 32 ≥ 24`
+Now, solve for $d$:  
+- $2^4 = 16 < 24$
+- $2^5 = 32 ≥ 24$
 
 ### Conclusion:
 - Minimum number of comparisons required in the worst case is **5**.
 - Therefore, **any comparison-based sorting algorithm must perform at least 5 comparisons in the worst case** to sort 4 distinct elements.
-
 
 
 ## Problem 2: Radix Sort using Radix = 9
