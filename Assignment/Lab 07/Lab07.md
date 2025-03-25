@@ -105,7 +105,7 @@ After sorting based on hundreds digit:\
 
 
 
-## Problem 3 (Radix Sort using radix 9)
+## Problem 3: (Radix Sort using radix 9)
 
 **Given List:**\
 S = {80, 27, 72, 1, 27, 8, 64, 34, 16}\
