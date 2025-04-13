@@ -49,4 +49,56 @@ Let's simulate:
 
 The output **154623** is **not possible**.
 
+---
 
+### Q1B: Expected Collisions in a Hash Table
+
+**Given:**
+
+- We store `n` keys in a hash table of size $$m = n^2$$.
+- A hash function `h` is randomly chosen from a **Universal class H**.
+- Let `X` be the **random variable** that counts the number of **collisions**.
+
+**Goal:** Show that the **expected number of collisions** is **< 1/2**.
+
+#### Step 1: Universal Hashing Property
+
+For universal hashing, the probability of collision for any two distinct keys is:
+
+$$\Pr[h(k_i) = h(k_j)] \leq \frac{1}{m}$$
+
+
+Number of key pairs:
+
+$$\binom{n}{2} = \frac{n(n-1)}{2}$$
+
+
+#### Step 2: Expected Number of Collisions
+
+Define $$X$$ as the total number of collisions:
+
+$$X = \sum_{1 \leq i < j \leq n} X_{ij}$$
+
+Where:
+
+- $$\( X_{ij} = 1 \) if \( h(k_i) = h(k_j) \)$$
+- $$\( X_{ij} = 0 \)$$ otherwise
+
+Then:
+
+$$\mathbb{E}[X] = \sum_{1 \leq i < j \leq n} \mathbb{E}[X_{ij}] \leq \sum_{1 \leq i < j \leq n} \frac{1}{m}$$
+
+$$\mathbb{E}[X] \leq \binom{n}{2} \cdot \frac{1}{m} = \frac{n(n-1)}{2} \cdot \frac{1}{n^2}$$
+
+$$\mathbb{E}[X] = \frac{n(n-1)}{2n^2} = \frac{n-1}{2n}$$
+
+
+#### Conclusion:
+
+Since:
+
+$$\frac{n-1}{2n} < \frac{1}{2}$$
+
+for all $$\( n \geq 1 \)$$, the **expected number of collisions** is:
+
+$$\boxed{\mathbb{E}[X] < \frac{1}{2}}$$
