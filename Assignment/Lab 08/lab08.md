@@ -102,3 +102,27 @@ $$\frac{n-1}{2n} < \frac{1}{2}$$
 for all $$\( n \geq 1 \)$$, the **expected number of collisions** is:
 
 $$\boxed{\mathbb{E}[X] < \frac{1}{2}}$$
+
+### Q2
+
+For a red-black tree with all nodes black, the tree must be a **perfect binary tree** (all paths from root to leaves have the same length). The number of nodes in a perfect binary tree is 
+$$2^h-1$$
+, where hh is the height. This restricts valid node counts to 
+$$n=1,3,7$$
+for 
+$$h=1,2,3$$
+. Other values of 
+$$n$$
+are not possible.
+
+| Num nodes nn | Does there exist a red-black tree with nn nodes, all of which are black? |
+| --- | --- |
+| 1 | Yes |
+| 2 | No |
+| 3 | Yes |
+| 4 | No |
+| 5 | No |
+| 6 | No |
+| 7 | Yes |
+
+
