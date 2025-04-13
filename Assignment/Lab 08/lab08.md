@@ -1,4 +1,4 @@
-### **Q1A**
+### Q1A. LIFO Push-Pop
 
 You are allowed exactly 6 pushes (S) of the values `1` to `6` in order and 6 pops (X). You must describe whether certain permutations can be obtained using a stack.
 
@@ -51,7 +51,7 @@ The output **154623** is **not possible**.
 
 ---
 
-### Q1B: Expected Collisions in a Hash Table
+### Q1B. Expected Collisions in a Hash Table
 
 **Given:**
 
@@ -107,7 +107,7 @@ $$\boxed{\mathbb{E}[X] < \frac{1}{2}}$$
 ---
 
 
-### Q2
+### Q2. Counts the number of collisions
 
 For a red-black tree with all nodes black, the tree must be a **perfect binary tree** (all paths from root to leaves have the same length). The number of nodes in a perfect binary tree is 
 $$2^h-1$$
@@ -131,7 +131,7 @@ are not possible.
 
 ---
 
-### Q3
+### Q3. Red-Black tree having n nodes
 
 Here's the Markdown table filled out for Q3:
 
