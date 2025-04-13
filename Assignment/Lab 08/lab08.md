@@ -31,3 +31,22 @@ Final output: **3 2 6 5 4 1**
 
 
 
+#### (b) Can we produce output `154623`?
+
+Let's simulate:
+
+-   **Push 1** → stack = [1]
+
+-   **Pop** → outputs `1`
+
+-   **Push 2** → stack = [2]
+
+-   **Push 3** → stack = [2, 3]
+
+-   **Push 4** → stack = [2, 3, 4]
+
+-   **Pop** → outputs `5` Invalid, `5` was never pushed yet!
+
+The output **154623** is **not possible**.
+
+
