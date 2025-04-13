@@ -1,3 +1,5 @@
+# Lab 08
+
 ### Q1A. LIFO Push-Pop
 
 You are allowed exactly 6 pushes (S) of the values `1` to `6` in order and 6 pops (X). You must describe whether certain permutations can be obtained using a stack.
