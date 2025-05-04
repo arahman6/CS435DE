@@ -1,3 +1,5 @@
+# Lab 9 Heap
+
 
 
 
@@ -43,16 +45,13 @@ But we can use a tighter bound using the structure of the heap:
 
 1. In a binary heap, at least half of the nodes are leaves (nodes at height 0). That’s ⌊n/2⌋.
 2. At most, there are:
-3. 
-$$
-   n / 2^{(h+1)}
-$$
+3. $$n / 2^{(h+1)}$$
 
    nodes of height $$h$$ (since we halve the number of potential parents with each increase in height).
 
 So we get:
 
-# of nodes at height $$h ≤[n / 2^{(h+1)}]$$
+\# of nodes at height $$h ≤[n / 2^{(h+1)}]$$
 
 
 ## Conclusion
