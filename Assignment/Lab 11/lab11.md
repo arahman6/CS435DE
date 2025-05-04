@@ -2,20 +2,20 @@
 
 ## Q1: Illustrate the operation of Max_Heapify(A, 3) using the array [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
 
-![IMG_5274](IMG_5274.png)
+![IMG_5274](IMG_5274_1.png)
 
 
 ## Q2: Show the operation of Build-Heap using the array [5, 3, 17, 10, 84, 19, 6, 22, 9] 
 
-![IMG_5275](IMG_5275.png)
+![IMG_5275](IMG_5275_1.png)
 
 
 ## Q3: Illustrate the operation of Heapsort using the array [5, 13, 2, 25, 7, 17, 20 8, 4]
 
-![IMG_5276](IMG_5276.png)
+![IMG_5276](IMG_5276_1.png)
 
 
-![IMG_5277](IMG_5277.png)
+![IMG_5277](IMG_5277_1.png)
 
 
 
