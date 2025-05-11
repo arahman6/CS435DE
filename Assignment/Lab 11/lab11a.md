@@ -126,3 +126,66 @@ Yes, the dynamic programming approach **dramatically improves** performance:
 This reduction makes the problem **tractable for moderate values of `n` and `W`**, especially when `W` is not too large.
 
 
+---
+
+
+## Q3 – Why the Knapsack Problem is Exponential
+
+### Question
+
+Use the answer of Q2 to explain how Knapsack problem is exponential (Hint – consider both inputs and see how they [or at least one] can cause Knapsack problem to be exponential).
+
+
+
+### Answer
+
+The **Knapsack problem** has two inputs that impact its complexity:
+
+- `n`: number of items
+- `W`: capacity of the knapsack
+
+#### Brute Force Complexity
+
+In the brute-force solution, for each of the `n` items, we have two choices:
+
+- Include the item
+- Exclude the item
+
+This creates a total of:
+
+```plaintext
+O(2^n)
+```
+
+combinations. Hence, the brute-force approach is **exponential** in `n`.
+
+
+### Influence of `W` in Dynamic Programming
+
+In the **dynamic programming** version, we reduce this exponential time to:
+
+```plaintext
+O(n * W)
+```
+
+However, this is called **pseudo-polynomial time**.
+
+Why?
+
+Because if `W` is a **very large number** (e.g., exponential in the number of bits needed to represent it), then even `O(n * W)` can behave **exponentially** in terms of the input size.
+
+
+### Key Insight
+
+The **Knapsack problem is exponential** in its nature because:
+
+- If solved naively, it requires checking `2^n` subsets.
+- Even with dynamic programming, the runtime depends on `W`, which can be **very large**.
+- Since `W` is part of the input and not its size (in bits), the problem remains **NP-complete** and **exponential** in worst-case scenarios.
+
+
+### Final Thought
+
+So, although dynamic programming makes it **practical for many real-world cases**, the problem still remains **exponential** when `n` is large or `W` is huge.
+
+
