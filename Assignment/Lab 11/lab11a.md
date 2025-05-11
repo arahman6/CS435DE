@@ -1,23 +1,26 @@
-# Lab 11A
+# Lab 11A – Dynamic Programming
 
-### **Updated Knapsack Algorithm with Item Tracking**
+## Q1 – 0/1 Knapsack with Item Tracking
 
-#### **Inputs:**
+### Problem Statement
 
--   `n`: number of items
+Modify the classical dynamic programming solution of the 0/1 Knapsack problem to not only compute the maximum value, but also to **track the items** selected using a `Keep[i][w]` array.
 
--   `W`: total capacity
+---
 
--   `v[]`: values of items (1-based index)
+### Updated Knapsack Algorithm with Item Tracking
 
--   `w[]`: weights of items (1-based index)
+#### Inputs:
+- `n`: number of items
+- `W`: total capacity
+- `v[]`: values of items (1-based index)
+- `w[]`: weights of items (1-based index)
 
 
 
-### **Pseudo-code**
+### Pseudo-code
 
-
-```
+```plaintext
 function KnapsackWithTracking(n, W, v, w):
     let V[0..n][0..W] be a table of zeros
     let Keep[0..n][0..W] be a table of false values
@@ -42,16 +45,25 @@ function KnapsackWithTracking(n, W, v, w):
             print "Item", i, "selected (value:", v[i], ", weight:", w[i], ")"
             j = j - w[i]
 
-    return V[n][W] // the maximum value`
-
+    return V[n][W] // the maximum value
 ```
 
-### **Explanation**
 
--   `V[i][j]` holds the **maximum value** for first `i` items and capacity `j`.
 
--   `Keep[i][j] = true` means item `i` is included in the optimal solution for capacity `j`.
+### Explanation
 
--   After filling the tables, we **trace back** from `V[n][W]` using `Keep[][]` to print selected items.
+- `V[i][j]` stores the maximum value using first `i` items and capacity `j`.
+- `Keep[i][j]` stores whether item `i` was used to get that value.
+- After building the tables, trace back using `Keep[i][j]` to list the items included in the optimal solution.
+
+
+
+### Sample Output (for small input)
+
+```
+Item 3 selected (value: 60, weight: 10)
+Item 1 selected (value: 100, weight: 20)
+Max value = 160
+```
 
 
