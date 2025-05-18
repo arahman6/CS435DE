@@ -226,3 +226,56 @@ Output: "No such prefix found"
 This is an efficient **linear-time** solution that checks only the prefix sum and avoids unnecessary computation.
 
 ---
+
+
+## Q5 – Dynamic Programming Solution to Subset Sum
+
+### Problem
+
+Use **Dynamic Programming** to solve the **Subset Sum** problem:
+
+- Set `S = {3, 2, 1, 5}`
+- Target sum `k = 4`
+
+### Step-by-Step DP Table Construction
+
+Let `dp[i][j]` = True if a subset of the first `i` elements can sum to `j`.
+
+- `i` = 0 to 4 (number of elements)
+- `j` = 0 to 4 (target sum)
+
+#### Initialize:
+- `dp[0][0] = True` (empty subset sums to 0)
+- `dp[0][1...k] = False` (no subset of 0 elements sums to >0)
+
+
+### Table Building (S = [3, 2, 1, 5])
+
+```plaintext
+    j →   0     1     2     3     4
+i ↓
+0       T     F     F     F     F
+1 (3)   T     F     F     T     F
+2 (2)   T     F     T     T     F
+3 (1)   T     T     T     T     T
+4 (5)   T     T     T     T     T   ← same as row 3, 5 > 4 (no update)
+```
+
+### Explanation
+
+- At `dp[3][4] = True`: we can make 4 using subset {3, 1}
+- The table confirms that a **subset sum of 4 is possible**
+
+
+### Final Result
+
+There **exists a subset** of `{3, 2, 1, 5}` that sums to `4`  
+Example subset: `{3, 1}` or `{2, 1, 1}` (depending on implementation)
+
+
+### Conclusion
+
+We have solved SubsetSum using **Dynamic Programming in O(n*k)** time,  
+with a table showing which sums can be made with the first `i` elements of the set.
+
+---
