@@ -166,8 +166,6 @@ Thus, **TSP is NP-complete**
 
 ---
 
-# Lab 12 – NP-Complete
-
 ## Q4 – O(n) Algorithm to Find Prefix with Sum = 10
 
 ### Problem
@@ -227,7 +225,6 @@ This is an efficient **linear-time** solution that checks only the prefix sum an
 
 ---
 
-
 ## Q5 – Dynamic Programming Solution to Subset Sum
 
 ### Problem
@@ -248,7 +245,6 @@ Let `dp[i][j]` = True if a subset of the first `i` elements can sum to `j`.
 - `dp[0][0] = True` (empty subset sums to 0)
 - `dp[0][1...k] = False` (no subset of 0 elements sums to >0)
 
-
 ### Table Building (S = [3, 2, 1, 5])
 
 ```plaintext
@@ -266,12 +262,10 @@ i ↓
 - At `dp[3][4] = True`: we can make 4 using subset {3, 1}
 - The table confirms that a **subset sum of 4 is possible**
 
-
 ### Final Result
 
 There **exists a subset** of `{3, 2, 1, 5}` that sums to `4`  
 Example subset: `{3, 1}` or `{2, 1, 1}` (depending on implementation)
-
 
 ### Conclusion
 
