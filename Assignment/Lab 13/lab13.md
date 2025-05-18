@@ -48,7 +48,6 @@ This property is essential in proving NP-completeness and supports the **closure
 
 Illustrate the proof that the **Hamiltonian Cycle (HC)** problem is polynomial-time reducible to the **Traveling Salesman Problem (TSP)** using the provided graph (a square: A—B—D—C—A).
 
----
 
 ### Answer
 
